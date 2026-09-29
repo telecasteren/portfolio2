@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  /*-- Colors --*/
+  --color-bg: #0b0b0c; /* black mute */
+  --color-surface: #141416; /* grey graphite */
+  --color-surface-raised: #1c1c1f; /* grey carbon */
+  --color-border: #2a2a2e; /* divider: steel line */
+  --color-border-strong: #6a6a70; /* focus outlines: iron line */
+  --color-text: #ededed; /* paper white */
+  --color-text-muted: #8a8a93; /* ash grey */
+  --color-accent: #fbbf24; /* amber yellow */
+  --color-accent-strong: #e17100; /* amber orange */
+  --color-on-accent: #0b0b0c; /* black mute - doublecheck necessity */
+
+  /*-- Fonts --*/
+  --font-sans:
+    "Geist Variable", ui-sans-serif, system-ui, sans-serif; /* bigger text */
+  --font-mono:
+    "JetBrains Mono Variable", ui-monospace, monospace; /* smaller text */
+
+  /*-- Scaling: text-size / line-height / font-weight etc. --*/
+  --text-display: 5.5rem; /* ~88px */
+  --text-display--line-height: 1;
+  --text-display--letter-spacing: -0.034rem; /* -3px */
+  --text-display--font-weight: 600;
+
+  --text-h1: 3.5rem; /* ~56px */
+  --text-h1--line-height: 1.05;
+  --text-h1--letter-spacing: -0.036rem; /* -2px */
+  --text-h1--font-weight: 600;
+
+  --text-h2: 2.25rem; /* ~36px */
+  --text-h2--line-height: 1.15;
+  --text-h2--letter-spacing: -0.028rem; /* -1px */
+  --text-h2--font-weight: 600;
+
+  --text-h3: 1.5rem; /* ~24px */
+  --text-h3--line-height: 1.25;
+  --text-h3--letter-spacing: -0.021rem; /* -0.5px */
+  --text-h3--font-weight: 500;
+
+  --text-body-1: 1.25rem; /* ~20px */
+  --text-body-1--line-height: 1.6;
+
+  --text-body: 1rem; /* ~16px */
+  --text-body--line-height: 1.6;
+
+  --text-mono-body: 0.875rem; /* ~14px */
+  --text-mono-body--line-height: 1.5;
+
+  --text-mono-label: 0.8125rem; /* ~13px uppercase */
+  --text-mono-label--line-height: 1.4;
+  --text-mono-label--letter-spacing: 0.08rem; /* 8% */
+  --text-mono-label--font-weight: 500;
+
+  --text-mono-small: 0.75rem; /* ~12px */
+  --text-mono-small--line-height: 1.4;
+
+  /*-- radius --*/
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  /*-- layout containers --*/
+  --container-content: 75rem; /* ~1200px width for content */
+}
+
+@layer base {
+  body {
+    @apply bg-bg font-sans text-body text-text antialiased;
+  }
+}
