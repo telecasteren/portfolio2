@@ -1,75 +1,70 @@
-# React + TypeScript + Vite
+# Portfolio 2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### ( Course at Noroff School of Technology and Media )
 
-Currently, two official plugins are available:
+## Introduction
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Welcome to my portfolio site! Created as a part of the course PORTFOLIO 2, in the second year at Noroff School of Techonology and Media. This website functions for project presentation and showcasing my work during the school years.
 
-## React Compiler
+### Simple Navigation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Static multiple pages site, with the ability to navigate to unique pages for each project presentation.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Step 1: Clone the Repository
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+git clone repo_link
+cd repo_name
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+### Step 2: Install Dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Run the following command in the terminal:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+pnpm install
 ```
+
+This will install the required dependencies for the site, including the build tool and any necessary plugins.
+
+### Step 3: Build the Site
+
+Run the following command to build the site:
+
+```bash
+pnpm build
+```
+
+This will compile the HTML, CSS, and JavaScript files and create a production-ready version of the site.
+
+### Step 4: Start the Server
+
+Run the following command to start the site's development server:
+
+```bash
+pnpm dev
+```
+
+This will start the site in dev-mode and allow you to access it at `http://localhost:5173` in your web browser.
+
+Or preview production with current local version:
+
+```bash
+pnpm build
+pnpm preview
+```
+
+This will start the site and allow you to access it at `http://localhost:4173/` in your web browser.
+
+## Acknowledgments
+
+This portfolio site was built using the following tools and libraries:
+
+- [React](https://reactjs.org/) frontend
+- [Tailwind](https://tailwindcss.com) styling
+
+### Resources
+
+- React Router Data Mode [docs](https://reactrouter.com/start/data/routing#routing)
