@@ -1,6 +1,6 @@
 export default function NotFound() {
   return (
-    <div className="mx-auto flex max-w-200 justify-center border-2 border-dashed border-accent p-4">
+    <div className="mx-auto mt-40 flex max-w-200 items-center justify-center border-2 border-dashed border-accent p-4">
       <h1 className="text-accent-strong sm:text-h2 md:text-h1">
         PAGE NOT FOUND
       </h1>

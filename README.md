@@ -58,6 +58,17 @@ pnpm preview
 
 This will start the site and allow you to access it at `http://localhost:4173/` in your web browser.
 
+### AI LOG
+
+AI can be used in this project to:
+
+- Brainstorming architecture strategy/structure
+- Create boilerplate / placeholder texts
+- Explaining concepts/rubberducking/debug assistance
+- Improve wording in project descriptions or reflections etc.
+
+_All AI usage is logged and can be found in [AI_LOG.md](AI_LOG.md)._
+
 ## Acknowledgments
 
 This portfolio site was built using the following tools and libraries:
@@ -68,3 +79,4 @@ This portfolio site was built using the following tools and libraries:
 ### Resources
 
 - React Router Data Mode [docs](https://reactrouter.com/start/data/routing#routing)
+- My hobby portfolio [url](https://telecasternilsen.com)

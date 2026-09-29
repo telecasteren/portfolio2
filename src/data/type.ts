@@ -1,7 +1,9 @@
 export type Project = {
   slug: string;
   title: string;
-  role: string;
+  subtitle?: string;
+  description: string;
+  roles: string[] | string;
   stack: string[];
   year: string;
   url?: string;
