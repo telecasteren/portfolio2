@@ -2,7 +2,6 @@
 
 ABOUT
 
-- skill tags
 - bio content
 - image
 

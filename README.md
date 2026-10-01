@@ -2,6 +2,8 @@
 
 ### ( Course at Noroff School of Technology and Media )
 
+**Live site:** [tcn.telecasternilsen.com](https://tcn.telecasternilsen.com)
+
 ## Introduction
 
 Welcome to my portfolio site! Created as a part of the course PORTFOLIO 2, in the second year at Noroff School of Techonology and Media. This website functions for project presentation and showcasing my work during the school years.
