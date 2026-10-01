@@ -1,5 +1,6 @@
 import { projects } from "@/data/projects";
 import Card from "@/components/layout/Card";
+import Title from "@/components/layout/Title";
 
 export default function Projects() {
   const projectList = projects;
@@ -16,12 +17,7 @@ export default function Projects() {
       id="projects"
       className="flex flex-col flex-wrap items-start gap-12 self-stretch pt-30"
     >
-      <div className="flex flex-col gap-4">
-        <p className="text-mono-small text-text-muted">
-          <span className="text-accent">// 01</span> SELECTED PROJECTS
-        </p>
-        <h2 className="text-h2 text-text">Things I've built</h2>
-      </div>
+      <Title index={1} slug="SELECTED PROJECTS" title="Things I've built" />
 
       <div className="flex w-full flex-wrap items-center justify-center gap-4">
         {projectList.map((project, index) => (

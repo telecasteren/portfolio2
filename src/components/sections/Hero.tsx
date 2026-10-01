@@ -1,12 +1,13 @@
 import { HeroCtas } from "@/components/HeroCtas";
 import { AccentDot } from "@/components/AccentDot";
+import { me } from "@/data/me";
 
 export default function Hero() {
-  const intro = "< hi, there! I'm";
-  const name = "Tele Caster Nilsen";
-  const tagline = "Frontend developer and coffee nerd";
-  const subtitle =
-    "Notoriously curious about everything. Building software one coffee at a time, all things user centric.";
+  const intro = "> hi, there! I'm";
+  const name = me.name;
+  const tagline = me.tagline;
+  const subtitle = me.subtitle;
+  const location = me.location;
 
   return (
     <div id="hero" className="grid gap-8">
@@ -23,7 +24,7 @@ export default function Hero() {
 
       <div className="flex items-center gap-2 text-mono-small text-text-muted">
         <img src="src/assets/Ellipse.svg" />
-        Oslo - Norway
+        {location}
       </div>
     </div>
   );

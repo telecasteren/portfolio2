@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import Tag from "@/components/layout/Tag";
 
 interface CardProps {
   index: number;
@@ -23,7 +24,7 @@ export default function Card({
     <div className="flex max-w-96 min-w-fit flex-1 flex-col items-start gap-3 rounded-md bg-surface">
       <div
         id="card-img"
-        className="h-40 w-full overflow-hidden rounded-md bg-surface-raised object-contain"
+        className="h-60 w-full overflow-hidden rounded-t-md bg-surface-raised object-contain"
       >
         {img ? (
           <img src={img} alt={title} className="w-full" />
@@ -51,12 +52,7 @@ export default function Card({
         {tags && tags.length > 0 && (
           <div className="flex flex-wrap items-center gap-2">
             {tags.map((tag) => (
-              <div
-                key={tag}
-                className="rounded-sm border border-border bg-surface-raised p-2.5 text-mono-small text-text-muted"
-              >
-                {tag}
-              </div>
+              <Tag key={tag} tag={tag} />
             ))}
           </div>
         )}

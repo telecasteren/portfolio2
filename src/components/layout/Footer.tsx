@@ -1,15 +1,16 @@
 import { Link } from "react-router";
+import { me } from "@/data/me";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  const name = "Tele Caster Nilsen";
+  const name = me.name;
   const footerLinks = [
-    { label: "Github ↗", href: "https://github.com/telecasteren" },
+    { label: "Github ↗", href: me.links.github },
     {
       label: "LinkedIn ↗",
-      href: "www.linkedin.com/in/tele-caster-nilsen-7002b9249",
+      href: me.links.linkedin,
     },
-    { label: "Email ↗", href: "mailto:nilsen.tele@proton.me" },
+    { label: "Email ↗", href: me.email },
   ];
 
   const linkStyles =

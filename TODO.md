@@ -1,4 +1,16 @@
-# Setup
+### General
+
+ABOUT
+
+- skill tags
+- bio content
+- image
+
+CONTACT
+
+- button onClicks + download feature
+
+## Setup
 
 #### Architecture
 
