@@ -31,11 +31,17 @@ export const ProjectDescription = ({ project }: ProjectDescriptionProps) => {
         <div className="grid gap-8">
           <p className="text-body-1 text-text-muted">{project.process}</p>
 
-          <img
-            src={project.detailImage}
-            alt={`Detail image of ${project.title}`}
-            className="h-auto w-full rounded-md"
-          />
+          <div>
+            <img
+              src={project.detailImage}
+              alt={`Detail image of ${project.title}`}
+              className="h-auto w-full rounded-md"
+            />
+
+            <span className="mt-2 flex justify-end text-mono-body italic">
+              {project.detailCaption}
+            </span>
+          </div>
         </div>
       </div>
 

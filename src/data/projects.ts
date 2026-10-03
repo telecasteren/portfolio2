@@ -8,10 +8,12 @@ export const projects: Project[] = [
     subtitle: "An auction platform for listing items and bidding on them.",
     description:
       "Sellers list items, buyers bid, and the highest bid wins when the timer runs out, with a dashboard to keep track of it all.",
-    roles: ["Frontend", "UX Design", "Product Engineer"],
+    roles: ["Frontend", "UX Design"],
     stack: ["HTML", "Tailwind CSS", "TypeScript"],
     year: "2025",
     caption: "Bits Auctions home page displaying an image carousel.",
+    detailCaption:
+      "Overview page showing the metrics chart for trends and total bids per month.",
     coverImage: "/projects/bits/bits-home.webp",
     detailImage: "/projects/bits/bits-metrics.webp",
     repo: "https://github.com/telecasteren/bits-auctions",
@@ -35,6 +37,8 @@ export const projects: Project[] = [
     year: "2026",
     caption:
       "Shopnet storefront displaying marketing hero and product listings.",
+    detailCaption:
+      "Checkout page displaying payment details, added products and order confirmation summary.",
     coverImage: "/projects/shopnet/shopnet-home.webp",
     detailImage: "/projects/shopnet/shopnet-checkout.webp",
     repo: "https://github.com/NoroffFEU/jsfw-2025-v1-teles_jsf_ca_2026",
@@ -52,14 +56,16 @@ export const projects: Project[] = [
     subtitle: "A social media platform for food lovers.",
     description:
       "A social media platform for discovering food, sharing recipes and restaurant tips.",
-    roles: ["Frontend", "UX Design", "Product Engineer"],
-    stack: ["HTML", "Tailwind CSS", "TypeScript"],
+    roles: ["Frontend", "UX Design"],
+    stack: ["HTML", "Tailwind CSS", "JavaScript"],
     year: "2025",
-    caption: "Home page for FOODIEGRAM.",
-    coverImage: "/projects/bits/bits-home.webp",
-    detailImage: "/projects/bits/bits-metrics.webp",
-    repo: "https://github.com/telecasteren/foodiegram/tree/css-frameworks",
-    url: "missing_link",
+    caption:
+      "The feed page with the list of posts, sort options and a search bar.",
+    detailCaption: "Post detail page showing the post and comment section.",
+    coverImage: "/projects/foodiegram/foodiegram-feed.webp",
+    detailImage: "/projects/foodiegram/foodiegram-post.webp",
+    repo: "https://github.com/telecasteren/social-app-noroff",
+    url: "https://foodiegram.telecasternilsen.com",
     goal: "Build a social media app where users post images and interact through likes and comments, using TypeScript and Tailwind CSS.",
     process:
       "My wife bakes sourdough, and her insights from the food community was that browsing is often quick and visual. So I prioritised an image-first feed, keeping interactions fast and layout uncluttered.",

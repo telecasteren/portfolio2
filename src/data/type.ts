@@ -4,6 +4,7 @@ export type Project = {
   title: string;
   subtitle?: string;
   caption?: string;
+  detailCaption?: string;
   description: string;
   roles: string[] | string;
   stack: string[];
