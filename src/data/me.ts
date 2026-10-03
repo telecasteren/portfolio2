@@ -6,9 +6,9 @@ export const me = {
   tagline: "Frontend developer and coffee nerd",
   motto: "Make the complex feel like a breeze!",
   subtitle:
-    "Notoriously curious about everything. Building all things user centric.",
+    "Notoriously curious. I read people well and build for the needs they haven't voiced yet.",
   bio: `I enjoy building on the web with clarity, accessibility and consistency.
-  My client facing background helps me translate real user needs into simple flows and clean components.
+  My client-facing background helps me translate real user needs into simple flows and clean components.
   I care about naming, structure and patterns that make it easy for others to read and maintain the code.`,
   skills: {
     languages: ["HTML", "CSS", "JavaScript", "TypeScript", "SQL"],
@@ -26,12 +26,12 @@ export const me = {
       "Figma",
       "Docker",
       "MySQL",
-      "MongDB",
+      "MongoDB",
       "Claude",
       "Ollama",
       "Lovable",
     ],
-    misc: ["accessibility", "human-relations", "product-management"],
+    misc: ["Accessibility", "Communication", "Product management"],
   },
   links: {
     github: "https://github.com/telecasteren",

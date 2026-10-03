@@ -1,6 +1,8 @@
 # Portfolio 2
 
-### ( Course at Noroff School of Technology and Media )
+The last course at Noroff School of Technology and Media
+
+![image](public/readme-home.webp)
 
 **Live site:** [tcn.telecasternilsen.com](https://tcn.telecasternilsen.com)
 
@@ -17,7 +19,7 @@ Static multiple pages site, with the ability to navigate to unique pages for eac
 ### Step 1: Clone the Repository
 
 ```bash
-git clone repo_link
+git clone https://github.com/telecasteren/portfolio2.git
 cd repo_name
 ```
 
@@ -54,7 +56,7 @@ This will start the site in dev-mode and allow you to access it at `http://local
 Or preview production with current local version:
 
 ```bash
-pnpm build
+pnpm build # build for production first
 pnpm preview
 ```
 
