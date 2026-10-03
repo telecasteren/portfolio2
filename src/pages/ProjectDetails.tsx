@@ -6,7 +6,7 @@ import { Divider } from "@/components/layout/Divider";
 import { ProjectHeader } from "@/components/projects/ProjectHeader";
 import { ProjectGallery } from "@/components/projects/ProjectGallery";
 import { ProjectMeta } from "@/components/projects/ProjectMeta";
-import { ProjectDescription } from "@/components/projects/ProductDescription";
+import { ProjectDescription } from "@/components/projects/ProjectDescription";
 
 export default function ProjectDetails() {
   const { slug } = useParams();
