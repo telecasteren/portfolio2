@@ -1,5 +1,7 @@
-import { HeroCtas } from "@/components/HeroCtas";
+import Section from "@/components/layout/Section";
+import { HeroLinks } from "@/components/links/HeroLinks";
 import { AccentDot } from "@/components/AccentDot";
+import { LocationDot } from "@/components/LocationDot";
 import { me } from "@/data/me";
 
 export default function Hero() {
@@ -10,7 +12,12 @@ export default function Hero() {
   const location = me.location;
 
   return (
-    <div id="hero" className="grid gap-8">
+    <Section
+      id="hero"
+      divider
+      className="pt-20 pb-30"
+      innerClasses="grid gap-8"
+    >
       <p className="font-mono text-mono-body text-accent">{intro}</p>
       <h1 className="max-w-220 text-display">
         {name}
@@ -20,12 +27,12 @@ export default function Hero() {
 
       <p className="max-w-180 text-body-1 text-text-muted">{subtitle}</p>
 
-      <HeroCtas />
+      <HeroLinks />
 
       <div className="flex items-center gap-2 text-mono-small text-text-muted">
-        <img src="src/assets/Ellipse.svg" />
+        <LocationDot />
         {location}
       </div>
-    </div>
+    </Section>
   );
 }

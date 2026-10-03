@@ -1,13 +1,18 @@
-import Title from "@/components/layout/Title";
-import { AccentDot } from "@/components/AccentDot";
 import { Link } from "react-router";
-import Button from "@/components/layout/Button";
+import { me } from "@/data/me";
+import Title from "@/components/layout/Title";
+import Section from "@/components/layout/Section";
+import { AccentDot } from "@/components/AccentDot";
+import LinkButton from "@/components/layout/LinkButton";
+import { DownloadCVLink } from "@/components/links/DownloadCVLink";
 
 export default function Contact() {
-  const email = "nilsen.tele@proton.me";
+  const email = me.email;
+  const linkedIn = me.links.linkedin;
+  const github = me.links.github;
 
   return (
-    <div id="about" className="flex flex-col gap-4 pt-30">
+    <Section id="contact" divider innerClasses="flex flex-col gap-8">
       <Title
         index={3}
         slug="CONTACT"
@@ -20,15 +25,25 @@ export default function Contact() {
         }
       />
 
-      <Link to={`mailto:${email}`} className="text-h2 text-accent">
+      <Link to={`mailto:${email}`} className="w-fit text-h2 text-accent">
         {email} ↗
       </Link>
 
       <div className="flex max-w-fit items-center gap-4">
-        <Button type="secondary">Github ↗</Button>
-        <Button type="secondary">LinkedIn ↗</Button>
-        <Button type="secondary">Download CV ↓</Button>
+        <LinkButton
+          external
+          type="secondary"
+          href={github}
+          children="Github ↗"
+        />
+        <LinkButton
+          external
+          type="secondary"
+          href={linkedIn}
+          children="LinkedIn ↗"
+        />
+        <DownloadCVLink />
       </div>
-    </div>
+    </Section>
   );
 }

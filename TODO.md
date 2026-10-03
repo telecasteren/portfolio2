@@ -2,12 +2,11 @@
 
 ABOUT
 
-- bio content
 - image
 
-CONTACT
+PROJECT DETAIL
 
-- button onClicks + download feature
+- FIX: share button should give options - popover?
 
 ## Setup
 

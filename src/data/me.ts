@@ -4,13 +4,12 @@ export const me = {
   photo: "",
   location: "Oslo - Norway",
   tagline: "Frontend developer and coffee nerd",
+  motto: "Make the complex feel like a breeze!",
   subtitle:
     "Notoriously curious about everything. Building all things user centric.",
-  bio: `This is a sentence about me. This is a sentence about me. This is a
-  sentence about me. This is a sentence about me. This is a sentence
-  about me. This is a sentence about me. This is a sentence about me.
-  This is a sentence about me. This is a sentence about me. This is a
-  sentence about me.`,
+  bio: `I enjoy building on the web with clarity, accessibility and consistency.
+  My client facing background helps me translate real user needs into simple flows and clean components.
+  I care about naming, structure and patterns that make it easy for others to read and maintain the code.`,
   skills: {
     languages: ["HTML", "CSS", "JavaScript", "TypeScript", "SQL"],
     frameworks: [
@@ -32,11 +31,11 @@ export const me = {
       "Ollama",
       "Lovable",
     ],
-    misc: ["accessibility", "human-relations", "product-engineering"],
+    misc: ["accessibility", "human-relations", "product-management"],
   },
   links: {
     github: "https://github.com/telecasteren",
-    linkedin: "www.linkedin.com/in/tele-caster-nilsen-7002b9249",
-    cv: "",
+    linkedin: "https://www.linkedin.com/in/tele-caster-nilsen-7002b9249/",
+    cv: "public/CV-tcn.pdf",
   },
 };

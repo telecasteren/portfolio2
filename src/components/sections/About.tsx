@@ -1,4 +1,5 @@
 import Title from "@/components/layout/Title";
+import Section from "@/components/layout/Section";
 import Tag from "@/components/layout/Tag";
 import { me } from "@/data/me";
 
@@ -8,17 +9,20 @@ export default function About() {
   const tools = me.skills.tools;
   const misc = me.skills.misc;
 
-  const sharedStyles = "flex flex-wrap items-center gap-3";
+  const sharedStyles = "flex flex-wrap items-center gap-2";
 
   return (
-    <div id="about" className="grid w-full grid-cols-2 gap-24 pt-30">
+    <Section id="about" divider innerClasses="grid grid-cols-2 gap-24">
       <div id="about-text" className="flex flex-col gap-6">
         <Title index={2} slug="ABOUT" title="A bit about me" />
         <p className="text-body text-text-muted">{me.bio}</p>
+        <p className="font-mono text-mono-small text-text-muted">
+          <span className="text-accent">Motto:</span> {me.motto}
+        </p>
 
         <div className="font-mono text-accent">$ skills --list</div>
 
-        <div className="flex flex-wrap items-center gap-3">
+        <div className={sharedStyles}>
           {lingos.map((l) => (
             <Tag key={l} tag={l} />
           ))}
@@ -45,8 +49,12 @@ export default function About() {
 
       <div
         id="about-img"
-        className="h-140 w-120 rounded-md border border-border bg-surface-raised"
-      />
-    </div>
+        className="flex h-120 w-100 flex-col items-center justify-center rounded-md border border-border bg-surface-raised"
+      >
+        <p className="mx-auto text-center font-mono text-mono-small text-text-muted">
+          [ portrait of shy person 5:6 ]
+        </p>
+      </div>
+    </Section>
   );
 }

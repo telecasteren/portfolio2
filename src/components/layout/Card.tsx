@@ -21,15 +21,19 @@ export default function Card({
   index,
 }: CardProps) {
   return (
-    <div className="flex max-w-96 min-w-fit flex-1 flex-col items-start gap-3 rounded-md bg-surface">
+    <div className="flex w-full flex-col rounded-md bg-surface">
       <div
         id="card-img"
-        className="h-60 w-full overflow-hidden rounded-t-md bg-surface-raised object-contain"
+        className="w-full overflow-hidden rounded-t-md bg-surface-raised"
       >
         {img ? (
-          <img src={img} alt={title} className="w-full" />
+          <img
+            src={img}
+            alt={title}
+            className="aspect-16/10 w-full object-contain"
+          />
         ) : (
-          <p className="mt-12 text-center font-mono text-mono-small text-text-muted">
+          <p className="mx-auto p-4 text-center font-mono text-mono-small text-text-muted">
             [ project screenshot 16:10 ]
           </p>
         )}
@@ -48,7 +52,7 @@ export default function Card({
         <p className="text-text-muted">{content}</p>
       </div>
 
-      <div id="card-footer" className="flex flex-col gap-4 p-4">
+      <div id="card-footer" className="mt-auto flex flex-col gap-4 p-4">
         {tags && tags.length > 0 && (
           <div className="flex flex-wrap items-center gap-2">
             {tags.map((tag) => (
