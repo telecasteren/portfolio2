@@ -14,8 +14,8 @@ export const projects: Project[] = [
     caption: "Bits Auctions home page displaying an image carousel.",
     detailCaption:
       "Overview page showing the metrics chart for trends and total bids per month.",
-    coverImage: "/projects/bits/bits-home.webp",
-    detailImage: "/projects/bits/bits-metrics.webp",
+    coverImage: "/projects/bits/bits-home-light.webp",
+    detailImage: "/projects/bits/bits-metrics-light.webp",
     repo: "https://github.com/telecasteren/bits-auctions",
     url: "https://bits.telecasternilsen.com",
     goal: "Build an auction site where users can create listings and bid on other peoples items. When an auction closes, the highest bidder wins.",
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     caption:
       "The feed page with the list of posts, sort options and a search bar.",
     detailCaption: "Post detail page showing the post and comment section.",
-    coverImage: "/projects/foodiegram/foodiegram-feed.webp",
+    coverImage: "/projects/foodiegram/foodiegram-feed-light.webp",
     detailImage: "/projects/foodiegram/foodiegram-post.webp",
     repo: "https://github.com/telecasteren/social-app-noroff",
     url: "https://foodiegram.telecasternilsen.com",

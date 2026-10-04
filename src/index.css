@@ -69,4 +69,9 @@
   body {
     @apply bg-bg font-sans text-body text-text antialiased;
   }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: var(--color-accent-strong);
+  }
 }

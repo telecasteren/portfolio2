@@ -10,7 +10,7 @@ export default function Header() {
   ];
 
   return (
-    <div className="flex w-full items-center justify-between border-b border-b-border bg-bg p-12 pr-30 pl-30">
+    <div className="fixed flex w-full items-center justify-between border-b border-b-border bg-bg p-12 pr-30 pl-30">
       <Link
         aria-label="Navigate home"
         to="/"

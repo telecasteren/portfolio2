@@ -9,7 +9,7 @@ interface SectionProps {
 export default function Section({
   id,
   divider,
-  className = "py-30",
+  className = "py-20 md:py-30",
   innerClasses = "",
   children,
 }: SectionProps) {

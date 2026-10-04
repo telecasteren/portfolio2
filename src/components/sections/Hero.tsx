@@ -15,7 +15,7 @@ export default function Hero() {
     <Section
       id="hero"
       divider
-      className="pt-20 pb-30"
+      className="pt-40 pb-30"
       innerClasses="grid gap-8"
     >
       <p className="font-mono text-mono-body text-accent">{intro}</p>

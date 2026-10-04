@@ -14,7 +14,7 @@ export default function ProjectDetails() {
   if (!project) return <NotFound />;
 
   return (
-    <article className="mx-auto grid gap-16 px-6 py-10 md:p-30 md:pt-15">
+    <article className="mx-auto grid gap-16 px-6 py-10 md:p-30 md:pt-40">
       <ProjectHeader project={project} />
       <ProjectGallery project={project} />
 
