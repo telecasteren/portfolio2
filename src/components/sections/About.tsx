@@ -12,7 +12,11 @@ export default function About() {
   const sharedStyles = "flex flex-wrap items-center gap-2";
 
   return (
-    <Section id="about" divider innerClasses="grid grid-cols-2 gap-24">
+    <Section
+      id="about"
+      divider
+      innerClasses="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-24"
+    >
       <div id="about-text" className="flex flex-col gap-6">
         <Title index={2} slug="ABOUT" title="A bit about me" />
         <p className="text-body text-text-muted">{me.bio}</p>
@@ -49,7 +53,7 @@ export default function About() {
 
       <div
         id="about-img"
-        className="flex h-120 w-100 flex-col items-center justify-center rounded-md border border-border bg-surface-raised"
+        className="flex aspect-5/6 w-full max-w-100 flex-col items-center justify-center self-center rounded-md border border-border bg-surface-raised"
       >
         <p className="mx-auto text-center font-mono text-mono-small text-text-muted">
           [ portrait of shy person 5:6 ]

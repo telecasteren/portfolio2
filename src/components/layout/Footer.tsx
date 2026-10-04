@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <footer
       aria-label="Footer navigation"
-      className="mt-30 flex w-full items-center justify-between border-t border-t-border p-12 pr-30 pl-30"
+      className="flex w-full flex-col items-center gap-4 border-t border-t-border px-6 py-20 md:flex-row md:justify-between md:px-12 md:py-10 lg:px-30"
     >
       <NavLink aria-label="Navigate home" to="/" className={linkStyles}>
         © {currentYear} {name}
@@ -29,9 +29,11 @@ export default function Footer() {
         className="flex flex-row flex-wrap gap-6 text-text-muted"
       >
         {footerLinks.map((item) => (
-          <NavLink key={item.label} aria-label={item.label} to={item.href}>
-            <li className={linkStyles}>{item.label}</li>
-          </NavLink>
+          <li className={linkStyles}>
+            <NavLink key={item.label} aria-label={item.label} to={item.href}>
+              {item.label}
+            </NavLink>
+          </li>
         ))}
       </ul>
     </footer>

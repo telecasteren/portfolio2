@@ -6,7 +6,11 @@ interface ProjectGalleryProps {
 
 export const ProjectGallery = ({ project }: ProjectGalleryProps) => {
   return (
-    <section id="project-gallery" aria-label="Project gallery section">
+    <section
+      id="project-gallery"
+      aria-label="Project gallery section"
+      className="w-full"
+    >
       <div className="items-center self-stretch rounded-md">
         <img
           src={project.coverImage}

@@ -25,11 +25,14 @@ export default function Contact() {
         }
       />
 
-      <Link to={`mailto:${email}`} className="w-fit text-h2 text-accent">
+      <Link
+        to={`mailto:${email}`}
+        className="w-fit text-h3 text-accent md:text-h2"
+      >
         {email} ↗
       </Link>
 
-      <div className="flex max-w-fit items-center gap-4">
+      <div className="flex max-w-fit flex-wrap items-center gap-4">
         <LinkButton
           external
           type="secondary"

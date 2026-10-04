@@ -10,7 +10,7 @@ export default function Header() {
   ];
 
   return (
-    <div className="fixed flex w-full items-center justify-between border-b border-b-border bg-bg p-12 pr-30 pl-30">
+    <div className="fixed top-0 z-50 flex w-full items-center justify-between border-b border-b-border bg-bg p-12 px-6 py-4 md:px-12 lg:px-30 lg:py-12">
       <Link
         aria-label="Navigate home"
         to="/"
@@ -22,13 +22,15 @@ export default function Header() {
       <nav aria-label="Navigation menu">
         <ul className="flex flex-row flex-wrap gap-8 font-mono text-mono-body text-text-muted">
           {navItems.map((item) => (
-            <NavLink
-              key={item.label}
-              aria-label={`Go to ${item.label}`}
-              to={item.hash}
-            >
-              <li className="cursor-pointer hover:text-accent">{item.label}</li>
-            </NavLink>
+            <li className="cursor-pointer hover:text-accent">
+              <NavLink
+                key={item.label}
+                aria-label={`Go to ${item.label}`}
+                to={item.hash}
+              >
+                {item.label}
+              </NavLink>
+            </li>
           ))}
         </ul>
       </nav>

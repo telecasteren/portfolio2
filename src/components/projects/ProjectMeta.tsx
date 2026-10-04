@@ -15,7 +15,7 @@ export const ProjectMeta = ({ project }: ProjectMetaProps) => {
     <section
       id="project-meta"
       aria-labelledBy="project-meta-title"
-      className="flex-start flex flex-wrap justify-start gap-6 self-stretch md:justify-center md:gap-35"
+      className="grid grid-cols-1 gap-8 px-6 sm:grid-cols-2 md:px-0 lg:grid-cols-4"
     >
       <h2 id="project-meta-title" className="sr-only">
         Project details
@@ -45,7 +45,7 @@ export const ProjectMeta = ({ project }: ProjectMetaProps) => {
 
         <div>
           <dt className={metaTitleStyles}>LINKS</dt>
-          <dd className="flex items-center gap-3">
+          <dd className="flex flex-wrap items-center gap-3">
             <LinkButton
               external
               type="primary"

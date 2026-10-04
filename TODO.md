@@ -1,9 +1,5 @@
 ### General
 
-ABOUT
-
-- image
-
 PROJECT DETAIL
 
 - FIX: share button should give options - popover?

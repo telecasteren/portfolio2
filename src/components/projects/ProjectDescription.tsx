@@ -9,7 +9,7 @@ export const ProjectDescription = ({ project }: ProjectDescriptionProps) => {
     <section id="project-description" className="grid gap-20">
       <div
         id="project-goal"
-        className="grid grid-cols-[280px_1fr] items-start gap-24"
+        className="grid grid-cols-1 items-start gap-4 md:grid-cols-[200px_1fr] md:gap-12 lg:grid-cols-[280px_1fr] lg:gap-24"
       >
         <p className="grid gap-2 text-h3">
           <span className="font-mono text-mono-small text-accent">01</span>The
