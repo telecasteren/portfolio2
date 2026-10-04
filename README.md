@@ -1,18 +1,49 @@
-# Portfolio 2
+# Tele Caster Nilsen - Portfolio 2
 
 The last course at Noroff School of Technology and Media
 
 ![image](public/readme-home.webp)
 
-**Live site:** [tcn.telecasternilsen.com](https://tcn.telecasternilsen.com)
+**Live site:** [tcn.telecasternilsen.com](https://tcn.telecasternilsen.com)<br/>
+**Author:** Tele Caster Nilsen
 
 ## Introduction
 
-Welcome to my portfolio site! Created as a part of the course PORTFOLIO 2, in the second year at Noroff School of Techonology and Media. This website functions for project presentation and showcasing my work during the school years.
+Welcome to my portfolio site. Created as a part of the course PORTFOLIO 2, in the second year at Noroff School of Techonology and Media. This website is a presentational site showcasing 3 of my projects during my school years.
 
 ### Simple Navigation
 
-Static multiple pages site, with the ability to navigate to unique pages for each project presentation.
+The site is a static multiple-pages site, with link navigation to unique project pages.
+
+#### Technologies
+
+- Vite, React, React Router, Typescript, Tailwind
+
+#### Styling
+
+`index.css`
+
+- Tailwind CSS variables mapped to style-guide
+
+#### Visual architectural hierarchy
+
+```bash
+# "/"
+HEADER
+    HOME
+    - Hero
+    - Projects
+        - ProjectDetails
+    - About
+    - Contact
+FOOTER
+
+# "/projects/:slug"
+HEADER
+    PROJECT
+    - ProjectDetails
+FOOTER
+```
 
 ## Installation
 
@@ -20,7 +51,7 @@ Static multiple pages site, with the ability to navigate to unique pages for eac
 
 ```bash
 git clone https://github.com/telecasteren/portfolio2.git
-cd repo_name
+cd portfolio2
 ```
 
 ### Step 2: Install Dependencies
