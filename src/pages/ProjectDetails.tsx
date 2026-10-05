@@ -1,4 +1,5 @@
 import { useParams } from "react-router";
+import { Meta } from "@/components/Meta";
 import { getProject } from "@/data/projects";
 import NotFound from "@/pages/NotFound";
 import { Divider } from "@/components/layout/Divider";
@@ -15,6 +16,10 @@ export default function ProjectDetails() {
 
   return (
     <article className="mx-auto grid max-w-content gap-16 pt-28 md:p-30 md:pt-40">
+      <Meta
+        title={`${project.title} | Tele Caster Nilsen`}
+        description={project.subtitle}
+      />
       <ProjectHeader project={project} />
       <ProjectGallery project={project} />
 
