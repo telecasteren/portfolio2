@@ -1,7 +1,7 @@
 export const me = {
   name: "Tele Caster Nilsen",
   email: "nilsen.tele@proton.me",
-  photo: "",
+  portrait: "/bw-portrait.png",
   location: "Oslo - Norway",
   tagline: "Frontend developer and coffee nerd",
   motto: "Make the complex feel like a breeze!",
@@ -36,6 +36,6 @@ export const me = {
   links: {
     github: "https://github.com/telecasteren",
     linkedin: "https://www.linkedin.com/in/tele-caster-nilsen-7002b9249/",
-    cv: "public/CV-tcn.pdf",
+    cv: "/CV-tcn.pdf",
   },
 };

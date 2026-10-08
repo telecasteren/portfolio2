@@ -29,7 +29,7 @@ export default function Footer() {
         className="flex flex-row flex-wrap gap-6 text-text-muted"
       >
         {footerLinks.map((item) => (
-          <li className={linkStyles}>
+          <li key={item.label} className={linkStyles}>
             <NavLink key={item.label} aria-label={item.label} to={item.href}>
               {item.label}
             </NavLink>

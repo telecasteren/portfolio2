@@ -11,7 +11,6 @@
   --color-text-muted: #8a8a93; /* ash grey */
   --color-accent: #fbbf24; /* amber yellow */
   --color-accent-strong: #e17100; /* amber orange */
-  --color-on-accent: #0b0b0c; /* black mute - doublecheck necessity */
 
   /*-- Fonts --*/
   --font-sans:
@@ -73,5 +72,21 @@
   ::selection {
     background-color: var(--color-accent);
     color: var(--color-accent-strong);
+  }
+
+  .rainbow {
+    background: linear-gradient(
+      90deg,
+      #ff5c5c,
+      #ffa033,
+      #ffd633,
+      #52bd70,
+      #5285ff,
+      #8f52bd,
+      #cf5fe3
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 }

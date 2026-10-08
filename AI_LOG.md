@@ -14,3 +14,13 @@
 **Date:** 03.10.26<br/>
 **Purpose:** Summarse my staged changes for writing a decent commit message.<br/>
 **Outcome:** Saved time by using the summary when writing the commit message (verified against staged).
+
+**Tool used: Claude Sonnet 5**<br/>
+**Date:** 06.10.26<br/>
+**Purpose:** Summarse my staged changes for writing a decent commit message (project: Bits Auctions API refactor).<br/>
+**Outcome:** Saved time by using the summary when writing the commit message (verified against staged).
+
+**Tool used: Claude Sonnet 5**<br/>
+**Date:** 08.10.26<br/>
+**Purpose:** Generate pastel version of some hex colours for rainbow text.<br/>
+**Outcome:** Got the colours converted for my linear-gradient `rainbow` class.

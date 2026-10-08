@@ -22,7 +22,7 @@ export default function Header() {
       <nav aria-label="Navigation menu">
         <ul className="flex flex-row flex-wrap gap-8 font-mono text-mono-body text-text-muted">
           {navItems.map((item) => (
-            <li className="cursor-pointer hover:text-accent">
+            <li key={item.label} className="cursor-pointer hover:text-accent">
               <NavLink
                 key={item.label}
                 aria-label={`Go to ${item.label}`}
