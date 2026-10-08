@@ -24,3 +24,8 @@
 **Date:** 08.10.26<br/>
 **Purpose:** Generate pastel version of some hex colours for rainbow text.<br/>
 **Outcome:** Got the colours converted for my linear-gradient `rainbow` class.
+
+**Tool used: Claude Sonnet 5**<br/>
+**Date:** 08.10.26<br/>
+**Purpose:** Get structural guidance for the project detail description texts.<br/>
+**Outcome:** Cleaner and more readable project texts.

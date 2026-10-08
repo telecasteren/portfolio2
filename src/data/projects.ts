@@ -5,7 +5,8 @@ export const projects: Project[] = [
     id: 1,
     slug: "bits",
     title: "Bits Auctions",
-    subtitle: "An auction platform for listing items and bidding on them.",
+    subtitle:
+      "Auctions platform with live bids and a personal dashboard that charts your bidding trends month by month.",
     description:
       "Sellers list items, buyers bid, and the highest bid wins when the timer runs out, with a dashboard to keep track of it all.",
     roles: ["Frontend", "UX Design"],
@@ -22,16 +23,16 @@ export const projects: Project[] = [
     process:
       "When planning the project, I put myself in the users shoes and asked what they'd want to keep an eye on. That led to the Overview dashboard, where users can track their bids month by month and see bidding trends across the year.",
     lesson:
-      "I got more proficient in TypeScript, Tailwind CSS, and used my client-facing experience to spot and build supporting features that help users succeed.",
+      "I used my client-facing experience to spot and build supporting features that help users succeed. Building on this, is knowing when 'not' to build, that way I make sure features give real value to the user.",
   },
   {
     id: 2,
     slug: "shopnet",
     title: "Shopnet",
     subtitle:
-      "An e-commerce storefront with a smooth experience from browsing to checkout.",
+      "A storefront with cart persistence and search filtering, built with type-safe routing and Zod-validated checkout.",
     description:
-      "A clean storefront for browsing products, filling a cart and checking out.",
+      "A clean storefront where cart state stays consistent across pages and checkout errors appear before you place the order, to make a smooth shopping experience.",
     roles: ["Frontend", "UX Design", "Product Engineer"],
     stack: ["React", "TypeScript", "TanStack", "Redux", "Zod"],
     year: "2026",
@@ -45,17 +46,18 @@ export const projects: Project[] = [
     url: "https://shopnet.telecasternilsen.com",
     goal: "Build an e-commerce storefront where users can browse and buy products in a clean, intuitive layout.",
     process:
-      "While planning this project, I focused on making the journey from browsing to checkout feel effortless. I used Redux to keep the cart state consistent across pages, and Zod to validate checkout form, so users get clear, immediate feedback before placing an order.",
+      "Shoppers abandon checkout when the form fails late or the cart loses its state. So I focused on making the journey from browsing to checkout feel effortless. I used Redux to keep the cart state consistent across pages, and Zod to validate checkout form. This makes the users get clear, immediate feedback before placing an order.",
     lesson:
-      "This project made me more confident in React and TypeScript, and learned how to structure state management and data validation so they scale with the app.",
+      "Working with the checkout process and state, I learnt to value how to structure state management and data validation so they scale with the app.",
   },
   {
     id: 3,
     slug: "foodiegram",
     title: "FOODIEGRAM.",
-    subtitle: "A social media platform for food lovers.",
+    subtitle:
+      "A social feed where you can post, follow, like and comment on recipes and food photos.",
     description:
-      "A social media platform for discovering food, sharing recipes and restaurant tips.",
+      "An image first feed for food-lovers, designed around how people actually browse food: quickly and visually. Discover food, share recipes and restaurant tips with your followers.",
     roles: ["Frontend", "UX Design"],
     stack: ["HTML", "Tailwind CSS", "JavaScript"],
     year: "2025",
@@ -70,7 +72,7 @@ export const projects: Project[] = [
     process:
       "My wife bakes sourdough, and her insights from the food community was that browsing is often quick and visual. So I prioritised an image-first feed, keeping interactions fast and layout uncluttered.",
     lesson:
-      "This project strengthened my skills with Tailwind CSS and TypeScript, and gave me a good understanding of designing for engagement and interaction. Small details make a big difference to the user experience.",
+      "Working on 'FOODIEGRAM.' gave me a good understanding of designing for engagement and interaction. Small details make a big difference to the user experience, such as optimistic likes and image loading performance.",
   },
 ];
 
