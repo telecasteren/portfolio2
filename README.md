@@ -116,3 +116,4 @@ This portfolio site was built using the following tools and libraries:
 - React Router Data Mode [docs](https://reactrouter.com/start/data/routing#routing)
 - My hobby portfolio [url](https://telecasternilsen.com)
 - React Meta [docs](https://react.dev/reference/react-dom/components/meta#usage)
+- Radix Popover [docs](https://www.radix-ui.com/primitives/docs/components/popover)
