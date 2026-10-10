@@ -12,7 +12,9 @@ export type Project = {
   url: string;
   repo: string;
   coverImage: string;
+  coverImage2?: string;
   detailImage: string;
+  detailImage2?: string;
   goal: string;
   process: string;
   lesson: string;

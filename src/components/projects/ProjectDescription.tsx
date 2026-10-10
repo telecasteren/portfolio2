@@ -1,3 +1,4 @@
+import { useAlternativeImage } from "@/hooks/useAlternativeImage";
 import type { Project } from "@/data/type";
 
 interface ProjectDescriptionProps {
@@ -5,6 +6,11 @@ interface ProjectDescriptionProps {
 }
 
 export const ProjectDescription = ({ project }: ProjectDescriptionProps) => {
+  const { showAlt, setShowAlt, hasAlt, src } = useAlternativeImage({
+    mainImage: project.detailImage,
+    subImage: project.detailImage2,
+  });
+
   return (
     <section id="project-description" className="grid gap-20">
       <div
@@ -33,14 +39,23 @@ export const ProjectDescription = ({ project }: ProjectDescriptionProps) => {
 
           <div>
             <img
-              src={project.detailImage}
+              src={src}
               alt={`Detail image of ${project.title}`}
-              className="h-auto w-full rounded-md"
+              className="rounded-md object-contain"
             />
-
             <span className="mt-2 flex justify-end text-mono-body italic">
               {project.detailCaption}
             </span>
+            {hasAlt && (
+              <button
+                type="button"
+                onClick={() => setShowAlt((prev) => !prev)}
+                aria-pressed={showAlt}
+                className="text-mono text-mono-body text-accent underline underline-offset-4"
+              >
+                {showAlt ? "Show dark theme" : "Show light theme"}
+              </button>
+            )}
           </div>
         </div>
       </div>
