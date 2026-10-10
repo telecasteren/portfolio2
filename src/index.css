@@ -74,6 +74,10 @@
     color: var(--color-accent-strong);
   }
 
+  .current > a.active {
+    color: var(--color-accent);
+  }
+
   .rainbow {
     background: linear-gradient(
       90deg,
