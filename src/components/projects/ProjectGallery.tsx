@@ -31,7 +31,7 @@ export const ProjectGallery = ({ project }: ProjectGalleryProps) => {
             type="button"
             onClick={() => setShowAlt((prev) => !prev)}
             aria-pressed={showAlt}
-            className="text-mono text-mono-body text-accent underline underline-offset-4"
+            className="text-mono cursor-pointer text-mono-body text-accent underline underline-offset-4"
           >
             {showAlt ? "Show dark theme" : "Show light theme"}
           </button>

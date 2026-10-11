@@ -27,7 +27,7 @@ export const ProjectDescription = ({ project }: ProjectDescriptionProps) => {
 
       <div
         id="project-process"
-        className="grid grid-cols-[280px_1fr] items-start gap-24"
+        className="grid grid-cols-1 items-start gap-4 md:grid-cols-[200px_1fr] md:gap-12 lg:grid-cols-[280px_1fr] lg:gap-24"
       >
         <p className="grid gap-2 text-h3">
           <span className="font-mono text-mono-small text-accent">02</span>The
@@ -51,7 +51,7 @@ export const ProjectDescription = ({ project }: ProjectDescriptionProps) => {
                 type="button"
                 onClick={() => setShowAlt((prev) => !prev)}
                 aria-pressed={showAlt}
-                className="text-mono text-mono-body text-accent underline underline-offset-4"
+                className="text-mono cursor-pointer text-mono-body text-accent underline underline-offset-4"
               >
                 {showAlt ? "Show dark theme" : "Show light theme"}
               </button>
@@ -62,7 +62,7 @@ export const ProjectDescription = ({ project }: ProjectDescriptionProps) => {
 
       <div
         id="project-lesson"
-        className="grid grid-cols-[280px_1fr] items-start gap-24"
+        className="grid grid-cols-1 items-start gap-4 md:grid-cols-[200px_1fr] md:gap-12 lg:grid-cols-[280px_1fr] lg:gap-24"
       >
         <p className="grid gap-2 text-h3">
           <span className="font-mono text-mono-small text-accent">03</span>What

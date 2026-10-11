@@ -15,7 +15,7 @@ export default function ProjectDetails() {
   if (!project) return <NotFound />;
 
   return (
-    <article className="mx-auto grid max-w-content gap-16 pt-28 md:p-30 md:pt-40">
+    <article className="mx-auto grid max-w-content gap-16 px-6 pt-32 pb-28 sm:pt-28 md:px-12 md:pt-38 lg:px-30">
       <Meta
         title={`${project.title} | Tele Caster Nilsen`}
         description={project.subtitle}

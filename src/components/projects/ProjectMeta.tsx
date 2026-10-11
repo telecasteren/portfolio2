@@ -14,7 +14,7 @@ export const ProjectMeta = ({ project }: ProjectMetaProps) => {
   return (
     <section
       id="project-meta"
-      aria-labelledBy="project-meta-title"
+      aria-labelledby="project-meta-title"
       className="grid grid-cols-1 gap-8 px-6 sm:grid-cols-2 md:px-0 lg:grid-cols-4"
     >
       <h2 id="project-meta-title" className="sr-only">
@@ -31,7 +31,7 @@ export const ProjectMeta = ({ project }: ProjectMetaProps) => {
 
         <div>
           <dt className={metaTitleStyles}>STACK</dt>
-          <dd className="flex flex-wrap items-center gap-2">
+          <dd className="mt-3 flex flex-wrap items-center gap-2">
             {project.stack.map((item) => (
               <Tag key={item} tag={item} />
             ))}
@@ -40,12 +40,12 @@ export const ProjectMeta = ({ project }: ProjectMetaProps) => {
 
         <div>
           <dt className={metaTitleStyles}>YEAR</dt>
-          <dd>{project.year}</dd>
+          <dd className="mt-3">{project.year}</dd>
         </div>
 
         <div>
           <dt className={metaTitleStyles}>LINKS</dt>
-          <dd className="flex flex-wrap items-center gap-3">
+          <dd className="mt-3 flex flex-wrap items-center gap-3">
             <LinkButton
               external
               type="primary"
