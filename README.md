@@ -15,35 +15,9 @@ Welcome to my portfolio site. Created as a part of the course PORTFOLIO 2, in th
 
 The site is a static multiple-pages site, with link navigation to unique project pages.
 
-#### Technologies
+### Technologies
 
-- Vite, React, React Router, Typescript, Tailwind
-
-#### Styling
-
-`index.css`
-
-- Tailwind CSS variables mapped to style-guide
-
-#### Visual architectural hierarchy
-
-```bash
-# "/"
-HEADER
-    HOME
-    - Hero
-    - Projects
-        - ProjectDetails
-    - About
-    - Contact
-FOOTER
-
-# "/projects/:slug"
-HEADER
-    PROJECT
-    - ProjectDetails
-FOOTER
-```
+- Vite, React, React Router, TypeScript, Tailwind CSS
 
 ## Installation
 
@@ -103,13 +77,6 @@ AI can be used in this project to:
 - Improve wording in project descriptions or reflections etc.
 
 _All AI usage is logged and can be found in [AI_LOG.md](AI_LOG.md)._
-
-## Acknowledgments
-
-This portfolio site was built using the following tools and libraries:
-
-- [React](https://reactjs.org/) frontend
-- [Tailwind](https://tailwindcss.com) styling
 
 ### Resources
 
