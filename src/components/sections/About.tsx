@@ -8,6 +8,7 @@ export default function About() {
   const frameworks = me.skills.frameworks;
   const tools = me.skills.tools;
   const misc = me.skills.misc;
+  const aiTools = me.skills.ai;
 
   const sharedStyles = "flex flex-wrap items-center gap-2";
 
@@ -26,28 +27,36 @@ export default function About() {
 
         <div className="font-mono text-accent">$ skills --list</div>
 
-        <div className={sharedStyles}>
-          {lingos.map((l) => (
-            <Tag key={l} tag={l} />
-          ))}
-        </div>
+        <div className="flex flex-col gap-y-4">
+          <div className={sharedStyles}>
+            {lingos.map((l) => (
+              <Tag key={l} tag={l} />
+            ))}
+          </div>
 
-        <div className={sharedStyles}>
-          {frameworks.map((f) => (
-            <Tag key={f} tag={f} />
-          ))}
-        </div>
+          <div className={`${sharedStyles} max-w-112.5`}>
+            {frameworks.map((f) => (
+              <Tag key={f} tag={f} />
+            ))}
+          </div>
 
-        <div className={sharedStyles}>
-          {tools.map((t) => (
-            <Tag key={t} tag={t} />
-          ))}
-        </div>
+          <div className={sharedStyles}>
+            {tools.map((t) => (
+              <Tag key={t} tag={t} />
+            ))}
+          </div>
 
-        <div className={sharedStyles}>
-          {misc.map((m) => (
-            <Tag key={m} tag={m} />
-          ))}
+          <div className={sharedStyles}>
+            {aiTools.map((t) => (
+              <Tag key={t} tag={t} />
+            ))}
+          </div>
+
+          <div className={sharedStyles}>
+            {misc.map((m) => (
+              <Tag key={m} tag={m} />
+            ))}
+          </div>
         </div>
       </div>
 

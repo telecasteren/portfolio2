@@ -3,15 +3,15 @@ export const me = {
   email: "nilsen.tele@proton.me",
   portrait: "/bw-portrait.png",
   location: "Oslo - Norway",
-  tagline: "Frontend developer and coffee nerd",
+  tagline: "Fullstack product engineer and coffee nerd",
   motto: "Make the complex feel like a breeze!",
   subtitle:
-    "Notoriously curious. I read people well and build for the needs they haven't voiced yet.",
-  bio: `I enjoy building on the web with clarity, accessibility and consistency.
-  My client-facing background helps me translate real user needs into simple flows and clean components.
-  I care about naming, structure and patterns that make it easy for others to read and maintain the code.`,
+    "Notoriously curious. I read people well and build for the needs you haven't voiced yet.",
+  bio: `I build for the web with a focus on clarity, accessibility and consistency.
+  Years working between customers and developers taught me to translate real user needs into simple flows and clean components.
+  I care about naming, structure and patterns that make code easy to read and maintain, for developers and AI agents alike.`,
   skills: {
-    languages: ["HTML", "CSS", "JavaScript", "TypeScript", "SQL"],
+    languages: ["JavaScript", "TypeScript", "SQL", "HTML", "CSS"],
     frameworks: [
       "React",
       "TanStack",
@@ -20,17 +20,11 @@ export const me = {
       "Express.js",
       "Tailwind",
       "MUI",
+      "Redux",
+      "Zod",
     ],
-    tools: [
-      "Git",
-      "Figma",
-      "Docker",
-      "MySQL",
-      "MongoDB",
-      "Claude",
-      "Ollama",
-      "Lovable",
-    ],
+    tools: ["Git", "Figma", "Docker", "MySQL", "MongoDB", "Prisma", "Neon"],
+    ai: ["Claude", "Copilot", "Codex", "Ollama"],
     misc: ["Accessibility", "Communication", "Product management"],
   },
   links: {
